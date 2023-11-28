@@ -1,0 +1,124 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url('./../../../../public/fonts/Gilroy-Black.ttf');
+	weight: 400
+}
+
+@font-face {
+	font-family: myFirst;
+	src: url('./../../../../public/fonts/Gilroy-Light.woff');
+	weight: 400
+}
+
+// .container {
+
+// }
+
+// .container > * {
+
+// }
+
+.container > footer {
+	margin-top: auto;
+
+}
+
+.header__container{
+	margin-inline: 20px;
+
+	@media (min-width: 768px) {
+		max-width: 83.3%;
+		margin: 0 auto;
+		padding-inline: 0;
+	}
+}
+
+
+.nav_links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: fluid(360, 1160); 
+	background:#242424;
+
+}
+
+.nav_links a {
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	font-family: myFirstFont;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.nav_links a:first-child {
+	padding-left: 34px;
+}
+
+.nav_links a:last-child {
+	padding-right: 34px;
+}
+
+.header__main{
+	display: flex;
+	flex-direction: row;
+	margin-left: -33px;
+
+	.header__left{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		form{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		button{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img{
+				background:  #242424;
+				position: absolute;
+				margin-left: -70px;
+			}
+		}
+
+		input {
+			display: flex;
+			width: 460px;
+			height: 56px;
+			padding-left: 35px  ;
+			align-items: center;
+			gap: 74.194px;
+			flex-shrink: 0;
+			border-radius: 41px;
+			border: 1px solid var(--Style, #FF2750);
+			background: var(--141414, #0D0D0D);
+		color: #ffffff;
+		font-family: myFirstFont;
+		font-size: 17px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+			outline: none;
+
+		}
+
+	}
+}
+
+.nav__btn{
+	background-color: #FF2750;
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	height: 80px;
+}
