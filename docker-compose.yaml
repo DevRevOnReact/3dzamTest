@@ -5,4 +5,4 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - "217.25.93.199"
+      - "8080:80"
