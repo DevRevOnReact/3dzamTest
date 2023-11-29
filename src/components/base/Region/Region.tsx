@@ -1,4 +1,4 @@
-import { useId } from '@reach/auto-id';
+
 import React, {
 	type HTMLAttributes,
 	type PropsWithChildren,
@@ -31,11 +31,11 @@ export function Region({
 	className,
 	...props
 }: PropsWithChildren<RegionProps>) {
-	const internalId = useId(id);
+
 	const headingLevel = useContext(HeadingLevelContext);
 	const nextLevel = headingLevel + 1;
 	return (
-		<HeadingIdContext.Provider value={internalId}>
+	
 			<HeadingLevelContext.Provider value={nextLevel}>
 				<Tag
 					className={cx(
@@ -43,11 +43,10 @@ export function Region({
 						className
 					)}
 					{...props}
-					aria-labelledby={internalId}
+				
 				>
 					{children}
 				</Tag>
 			</HeadingLevelContext.Provider>
-		</HeadingIdContext.Provider>
 	);
 }
