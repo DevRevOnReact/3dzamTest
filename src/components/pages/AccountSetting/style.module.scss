@@ -1,0 +1,368 @@
+@font-face {
+	font-family: myFirst;
+	src: url('./../../../../public/fonts/Gilroy-Light.woff');
+	weight: 400
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url('./../../../../public/fonts/Gilroy-Black.woff');
+	weight: 400
+}
+
+.account {
+	background: #242424;
+	color: white;
+	width: fluid(360, 1160);
+
+	.accountTitle{
+		padding-top:47px ;
+		color: #FFF;
+		font-family: myFirstFont;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.account__container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+		padding-top: 35px;
+		padding-bottom: 55px;
+		.account__block1{
+			display: flex;
+			flex-direction: row;
+
+			.account__buttons{
+				display: flex;
+				gap: 30px;
+
+				.account__button{
+					display: flex;
+					width: 163px;
+					height: 50px;
+					padding: 47.581px 64.71px;
+					justify-content: center;
+					align-items: center;
+					gap: 95.161px;
+					flex-shrink: 0;
+					border-radius: 19.032px;
+					background: #FF2750;
+					
+					&:hover{
+						box-shadow: 0px 0px 57.09677px 0px #FF2750;	
+					}
+					cursor: pointer;
+					p{
+						color: #FFF;
+						text-align: center;
+						font-family: myFirstFont;
+						font-size: 21px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+					}
+				}
+			}
+		}
+
+		.account__block2{
+			.account__image{
+				width: 114px;
+				height: 114px;
+				border-radius: 200px;
+				border: 2px solid var(--Style, #FF2750);
+			}
+
+			p{
+				color: #FFF;
+				padding-top: 21px;
+				text-align: center;
+				font-family: myFirstFont;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+
+		.account__block3{
+			display: flex;
+			flex-direction: row;
+			.account__buttons{
+				display: flex;
+				gap: 30px;
+
+				.account__button{
+					display: flex;
+					width: 163px;
+					height: 50px;
+					padding: 47.581px 64.71px;
+					justify-content: center;
+					align-items: center;
+					gap: 95.161px;
+					flex-shrink: 0;
+					border-radius: 19.032px;
+					background: #FF2750;
+					&:hover{
+						box-shadow: 0px 0px 57.09677px 0px #FF2750;	
+					}
+					cursor: pointer;
+					p{
+						color: #FFF;
+						text-align: center;
+						font-family: myFirstFont;
+						font-size: 21px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+					}
+				}
+				.account__button1{
+					display: flex;
+					width: 163px;
+					height: 50px;
+					padding: 47.581px 64.71px;
+					justify-content: center;
+					align-items: center;
+					gap: 95.161px;
+					flex-shrink: 0;
+					border-radius: 19.032px;
+					border: 1.903px solid var(--Style, #FF2750);
+					&:hover{
+						box-shadow: 0px 0px 57.09677px 0px #FF2750;	
+					}
+					background: rgba(0,0,0,0);
+					cursor: pointer;
+					p{
+						color: #FFF;
+
+						text-align: center;
+						font-family: myFirstFont;
+						font-size: 21px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+.account__table{
+	background: #242424;
+	color: white;
+	width: fluid(360, 1160);
+	margin-top: 50px;
+	padding-bottom: 30px;
+	
+
+	.table__container{
+		margin-inline: 20px;
+
+	@media (min-width: 768px) {
+		max-width: 86.2%;
+		margin: 0 auto;
+		padding-inline: 0;
+	}
+
+
+		.table__inputs{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			.table__block{
+				display: flex;
+				align-items: center;
+				gap: 22px;
+			}
+
+			.table__start, .table__end{
+				color: var(--7-d-7-d-7-d, #7D7D7D);
+				font-family: myFirst;
+				font-size: 26.71px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;	
+			}
+
+			.table__date{
+				display: flex;
+				width: 164px;
+				height: 68px;
+				padding: 37.097px 50.452px 40px 50.452px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 14.839px;
+				border: 1.484px solid var(--7-d-7-d-7-d, #7D7D7D);
+				color: var(--7-d-7-d-7-d, #7D7D7D);
+				text-align: center;
+				font-family: Gilroy;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+
+			.table__button{
+				display: flex;
+				width: 164px;
+				height: 68px;
+				padding: 37.097px 50.452px 40px 50.452px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 14.839px;
+				border: 1.484px solid var(--Style, #FF2750);
+				background-color: #242424;
+				color: var(--Style, #FF2750);
+				&:hover{
+					box-shadow: 0px 0px 57.09677px 0px #FF2750;	
+				}
+				cursor: pointer;
+				p{
+				
+					text-align: center;
+					font-family: myFirstFont;
+					font-size: 21px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+			}
+		}
+
+		.table__sales{
+			display: flex;
+			width: 201px;
+			height: 48px;
+			padding: 37.097px 50.452px 40px 35px;
+			align-items: center;
+			border-radius: 14.839px;
+			background: var(--141414, #0D0D0D);
+			gap: 30px;
+
+			a{
+				color: var(--7-d-7-d-7-d, #7D7D7D);
+				font-family: myFirst;
+				font-size: 17px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+
+				&:hover{
+					color: var(--Style, #FF2750);
+					text-decoration-line: underline;
+				}
+			}
+		}
+
+		.main__texts{
+			display: flex;
+			margin-left: 48px;
+			padding-bottom: 30px;
+			.day, .price, .profit, .product, .count{
+				padding-top: 68px;
+				color: var(--7-d-7-d-7-d, #7D7D7D);
+				font-family: myFirst;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+
+			.product{
+				margin-left: 191px;
+			}
+
+			.count{
+				margin-left: 148px;
+			}
+
+			.price{
+				margin-left: 116px;
+			}
+
+			.profit{
+				margin-left: 129px;
+			}
+		}
+
+		.table__row{
+			display: flex;
+			width: 1010px;
+			height: 77px;
+			padding: 37.097px 50.452px 40px 35px;
+			align-items: center;
+			flex-shrink: 0;
+			border-radius: 14.839px;
+			background: var(--141414, #0D0D0D);
+			gap: 135px;
+
+			.row__day, .row__price, .row__profit, .row__product, .row__count{
+				color: var(--7-d-7-d-7-d, #7D7D7D);
+				font-family: myFirst;
+				font-size: 17px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+
+		.table__row_plus{
+			display: flex;
+			width: 1010px;
+			height: 77px;
+			padding: 37.097px 50.452px 40px 35px;
+			align-items: center;
+			flex-shrink: 0;
+			border-radius: 14.839px;
+			gap: 135px;
+
+			.row__day, .row__price, .row__profit, .row__product, .row__count{
+				color: var(--7-d-7-d-7-d, #7D7D7D);
+				font-family: myFirst;
+				font-size: 17px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+
+	}
+}
+
+.container {
+	position: relative;
+	display: inline-block;
+	margin: 20px 26px 20px 0px;
+}
+
+.image {
+	display: block;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	opacity: 0;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+	color: white;
+	font-family: myFirstFont;
+}

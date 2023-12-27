@@ -41,6 +41,42 @@ export const Header = () => {
 									popularData={popularData}/>
 				</div>
 				<div className={cx('header__right')}>
+					
+					<Image
+						alt="fsfdsf"
+						src="/images/love.png"
+						width={75}
+						height={75}
+						style={{
+							objectFit: 'cover',
+							pointerEvents: 'none',
+							cursor:'pointer'
+						}}
+					/>
+					<Image
+						alt="fsfdsf"
+						src="/images/bag.png"
+						width={75}
+						height={75}
+						style={{
+							objectFit: 'cover',
+							pointerEvents: 'none',
+							cursor:'pointer'
+						}}
+					/>
+					<Link href="/account">
+						<Image
+							alt="fsfdsf"
+							src="/images/acc.png"
+							width={75}
+							height={75}
+							style={{
+								objectFit: 'cover',
+								pointerEvents: 'none',
+								cursor: 'pointer'
+							}}
+						/>
+					</Link>
 				</div>
 			</div>
 			<div className={cx('header')}>

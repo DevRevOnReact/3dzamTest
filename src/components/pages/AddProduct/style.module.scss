@@ -1,0 +1,226 @@
+@font-face {
+	font-family: myFirst;
+	src: url('./../../../../public/fonts/Gilroy-Light.woff');
+	weight: 400
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url('./../../../../public/fonts/Gilroy-Black.woff');
+	weight: 400
+}
+
+.addProduct__description{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 12px;
+
+	.addProduct__line{
+		width: 2px;
+		height: 46px;
+		background: #FF2750;
+	}
+
+    .addProduct__text{
+        color: #7D7D7D;
+        font-family: myFirst;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200.5%; 
+    }
+}
+
+.addProduct__heading1{
+    color: #FF2750;
+    font-family: myFirstFont;
+    font-size: 26.71px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left:60px ;
+    padding-top:66px ;
+}
+
+.addProduct__media{
+    width: 1161px;
+    background: #242424;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(-70deg, rgba(255, 39, 80, 0.8) -10%,  #242424 17%);
+}
+
+.addProduct__plus{
+    width: 1161px;
+    background: #242424;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.addProduct__media{
+    margin-top: 45px;
+
+.addProduct__media_container{
+    margin-inline: 20px;
+
+	@media (min-width: 768px) {
+		max-width: 86.2%;
+		margin-left:60px ;
+		padding-inline: 0;
+	}
+
+    display: flex;
+    justify-content: space-between;
+    .media__content{
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+
+        .media__content_head{
+            color: #FFF;
+            font-family: myFirst;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200.5%;
+        }
+
+        .media__content_text{
+            color: #7D7D7D;
+            font-family: myFirst;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200.5%;
+            width: 500px;
+        }
+    }
+}
+}
+
+.container {
+	position: relative;
+	display: inline-block;
+	margin: 20px 26px 20px 0px;
+    margin-top: 66px;
+
+    .basic__input{
+        display: flex;
+        width: 401px;
+        height: 68px;
+        padding: 40px 50.452px 40px 35px;
+        align-items: center;
+        gap: 74.194px;
+        border-radius: 14.839px;
+        background: var(--141414, #0D0D0D);
+        
+        &::placeholder{
+            color: var(--7-d-7-d-7-d, #7D7D7D);
+            font-family: myFirst;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        outline:none;
+        border: none;
+        color: var(--7-d-7-d-7-d, #7D7D7D);
+        font-family: myFirst;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .mini__input{
+        display: flex;
+        width: 117px;
+        height: 40px;
+        padding: 20px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 251px;
+        border-radius: 14.839px;
+        background: var(--141414, #0D0D0D);
+        
+        &::placeholder{
+            color: var(--7-d-7-d-7-d, #7D7D7D);
+            font-family: myFirst;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        outline:none;
+        border: none;
+        color: var(--7-d-7-d-7-d, #7D7D7D);
+        font-family: myFirst;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.image {
+	display: block;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	opacity: 0;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+	color: white;
+	font-family: myFirstFont;
+}
+
+.media__block{
+     margin-top: 45px;
+     padding-bottom: 45px;
+}
+
+.addProduct__plus{
+    margin-top: 45px;
+
+.addProduct__media_container{
+    margin-inline: 20px;
+
+	@media (min-width: 768px) {
+		max-width: 86.2%;
+		margin-left:60px ;
+		padding-inline: 0;
+	}
+
+    display: flex;
+    justify-content: space-between;
+    .media__content{
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+
+        .media__content_head{
+            color: #FFF;
+            font-family: myFirst;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200.5%;
+        }
+
+        .media__content_text{
+            color: #7D7D7D;
+            font-family: myFirst;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200.5%;
+            width: 500px;
+        }
+    }
+}
+}
