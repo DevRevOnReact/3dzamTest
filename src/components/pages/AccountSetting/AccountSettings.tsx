@@ -137,26 +137,6 @@ const AccountSettings = () => (
                                                 <p className={cx('row__profit')}>$85.00</p>
                                         </div> 
                                 </div>
-                                <form className={cx('container')}>
-                                        <Image
-                                                alt="fsfdsf"
-                                                src="/images/upload.png"
-                                                width={520}
-                                                height={387}
-                                                style={{
-                                                        objectFit: 'cover',
-                                                        pointerEvents: 'none',
-                                                }}
-                                                className={cx('image')}
-                                        />    
-                                        <input 
-                                                type="file"
-                                                id="fileInput"
-                                                name="image"
-                                                accept="image/*"
-                                                className={cx('overlay')}
-                                        />
-                                </form>
                         </div>
                 </section>
 	</Container>

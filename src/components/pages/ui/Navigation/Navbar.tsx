@@ -123,6 +123,8 @@ import Image from 'next/image';
     );
 
     return (
+    <>
+      {isVisible && <div className={cx('overlay')} onClick={onToggleVisibility}></div>}
       <div className={cx('navbar', { hidden: !isVisible })} ref={navbarRef}>
         <div className={cx('closeButton')} onClick={onToggleVisibility}>
         <svg
@@ -154,6 +156,8 @@ import Image from 'next/image';
         </div>
         <nav className={cx('pages')}>{renderPages(pages)}</nav>
       </div>
+    
+    </>
     );
   };
 

@@ -43,7 +43,6 @@ const Search: React.FC<SearchProps> = ({ data, onSearchResults }) => {
 		const searchTerm = event.target.value;
 		setSearchTerm(searchTerm);
 
-		// Выполняем поиск по данным
 		const catalogResults = data.filter((item) => {
 			const lowerCaseOverlayText = item.overlayText.toLowerCase();
 			const lowerCaseSearchTerm = searchTerm.toLowerCase();
@@ -117,7 +116,7 @@ const Search: React.FC<SearchProps> = ({ data, onSearchResults }) => {
 	return (
 		<div>
 			
-			<div style={{display: 'flex'}}>
+			<div style={{display: 'flex', alignItems:'center'}}>
 				<Link href={'/'}>
 				<Image
 						alt="fsfdsf"
@@ -138,6 +137,43 @@ const Search: React.FC<SearchProps> = ({ data, onSearchResults }) => {
 				placeholder="Search..."
 				className={cx('input')}
 			/>
+			<div className={cx('header__right')}>
+					<Image
+						alt="fsfdsf"
+						src="/images/love.png"
+						width={75}
+						height={75}
+						style={{
+							objectFit: 'cover',
+							pointerEvents: 'none',
+							cursor:'pointer'
+						}}
+					/>
+					<Image
+						alt="fsfdsf"
+						src="/images/bag.png"
+						width={75}
+						height={75}
+						style={{
+							objectFit: 'cover',
+							pointerEvents: 'none',
+							cursor:'pointer'
+						}}
+					/>
+					<Link href="/account">
+						<Image
+							alt="fsfdsf"
+							src="/images/acc.png"
+							width={75}
+							height={75}
+							style={{
+								objectFit: 'cover',
+								pointerEvents: 'none',
+								cursor: 'pointer'
+							}}
+						/>
+					</Link>
+				</div>
 			</div>
 
 			{searchTerm && (
